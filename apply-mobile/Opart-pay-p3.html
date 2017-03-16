@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>其他支付</title>
+<link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/loading.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+<body>
+	<header class="top-header">
+		<a class="icona" href="javascript:history.go(-1)">
+			<img src="images/left.png"/>
+		</a>
+		<h3>部分支付</h3>
+		<a class="text" href="#"></a>
+	</header>
+	<div class="ordermonboxothmb0"><span>订单金额</span><span><i  id="orderMoney">100.01</i>元</span></div>
+	<div class="ordermonboxothmb0"><span>支付方式</span><span><i  class="zhifuway"><a></a></i></span></div>
+	<div class="login">
+		<form>
+			<ul>
+				<li>
+					<label>输入支付金额：</label>
+					<input id="inputMoney" onkeyup='clearNoNum(this)'  type="text" value="100.01"/>
+					<div class="fr judge">
+						<a  id="t_judge" class="link_icon">元</a>
+					</div>
+				</li>
+			</ul>
+			<input id="next_btn" type="button" value="立即支付"/>
+		</form>
+	</div>
+<script type="text/javascript" src="layer_mobile/layer.js"></script>	
+<script>
+	$(document).ready(function(e) {
+		$(document).ready(function(e) {
+		 if (window.location.href.split('?')[1].split('=')[0] === 'id') { 
+        var way = window.location.href.split('?')[1].split('=')[1];
+		$('.zhifuway').find('a').text(decodeURI(way)+'[部分支付]');
+      }
+    });
+    });
+</script>
+<script>
+//只能输入小数点和数字
+function clearNoNum(obj) {  
+	obj.value = obj.value.replace(/[^\d.]/g,""); 
+	obj.value = obj.value.replace(/^\./g,""); 
+	obj.value = obj.value.replace(/\.{2,}/g,".");
+	obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");  
+	obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/,'$1$2.$3');   
+}
+$(document).ready(function(e) {
+	$('#inputMoney').val($('#orderMoney').text());
+	$('#inputMoney').bind('input propertychange', function () { 
+	var orderMoney = parseFloat($('#orderMoney').text());
+	var inputPrice = parseFloat($('#inputMoney').val());
+	if ($('#inputMoney').val() == '') {
+		$('#inputMoney').addClass('borColor');
+	} else  if ($(this).val() > orderMoney){
+		$('#inputMoney').addClass('borColor');
+	}else{
+		$('#inputMoney').removeClass('borColor');
+	}
+  });
+	
+	$('#next_btn').click(function(){
+		var orderMoney = parseFloat($('#orderMoney').text());
+		var inputPrice = parseFloat($('#inputMoney').val());
+		if($('#inputMoney').val() > orderMoney){
+			 layer.open({
+				content: '您输入的金额超出订单金额'
+				,btn: '我知道了'
+			  });
+			$('#inputMoney').addClass('borColor');
+		}
+		else if ($('#inputMoney').val() == '' || $('#inputMoney').val() == 0) {
+			$('#inputMoney').addClass('borColor');
+			layer.open({
+			content: '您输入的金额不能为0或空'
+				,btn: '我知道了'
+			  });
+		} 
+		else{
+			$('form').attr('action','1.html').submit();
+		}	
+	});
+});
+</script>
+</body>
+</html>

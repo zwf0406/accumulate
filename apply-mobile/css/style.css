@@ -1,0 +1,635 @@
+html, body, div,h2, span, a, p, section, article, dl, ul, dd, dt, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+section, div, a, ul, dl, span, p, dd, dt, li, input, textarea, label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+em {
+  font-style:normal;
+}
+dl, ul {
+  list-style: none;
+}
+
+a, button, input, textarea, span, img, li, div {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+.box-siz {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+table {
+  border-collapse:collapse;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper-static {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  min-width: 320px;
+  color: rgba(0, 0, 0, 0.87);
+  -ms-touch-action: none;
+  background: #fff;
+  font-family: arial, "Microsoft YaHei", "FontAwesome"  !important;
+}
+@font-face {
+    font-family: 'adminthemesregular';
+    src: url('font/adminthemes-webfont.eot');
+    src: url('font/adminthemes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/adminthemes-webfont.woff2') format('woff2'),
+         url('font/adminthemes-webfont.woff') format('woff'),
+         url('font/adminthemes-webfont.ttf') format('truetype'),
+         url('font/adminthemes-webfont.svg#adminthemesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+input, textarea, div {
+  outline: medium;
+  resize:none;
+}
+
+input, textarea {
+  -webkit-appearance: none !important;
+}
+
+input[type="search"] {
+  -webkit-appearance: none !important;
+}
+
+input::-webkit-search-cancel-button {
+  display: none !important;
+}
+
+input {
+  line-height: normal !important;
+}
+
+input::-webkit-input-placeholder {
+  font-family: arial, "Microsoft YaHei", "FontAwesome"  !important;
+}
+input:-moz-placeholder {
+  font-family: arial, "Microsoft YaHei", "FontAwesome"  !important;
+}
+input::-moz-placeholder {
+  font-family: arial, "Microsoft YaHei", "FontAwesome"  !important;
+}
+input:-ms-input-placeholder {
+　　font-family: arial, "Microsoft YaHei", "FontAwesome"  !important;
+}
+
+a {
+  color: #1a8efb;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FA4B53;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FA4B53;
+  text-decoration: none;
+}
+
+a:active {
+  color: #FA4B53;
+  text-decoration: none;
+}
+
+body {
+  font-family: arial,, "Microsoft YaHei", "FontAwesome"  !important;
+}
+
+@media screen and (max-device-width: 640px){ /*媒介宽度最大640px*/
+  body{
+    -webkit-text-size-adjust:none;
+  }
+}
+
+/* public */
+.clear { zoom:1; }
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; 
+}
+.fl { float:left; }
+.fr { float:right; }
+
+.w48 { width:48%; }
+.w50 { width:50%; }
+.w88 { width:88%; }
+.w90 { width:90%; margin-left:auto; margin-right:auto; }
+.w91 { width:91%; margin-left:auto; margin-right:auto;  }
+.w95 { width:95%; }
+.w98 { width:98%; }
+.w100 { width:100%; }
+
+.h50 { height:50px; }
+
+.lh86 { line-height:86px; }
+.lh50 { line-height:50px; }
+
+/* 边距 */
+.m-auto { margin-left:auto; margin-right:auto; }
+.mt4 { margin-top:4px; }
+.mt8 { margin-top: 15%; }
+.mt10 { margin-top:10px; }
+.mt15 { margin-top:15px; }
+.mt18 { margin-top:18px; }
+.mt20 { margin-top:20px; }
+.mt24 { margin-top:24px; }
+.mt27 { margin-top:27px; }
+.mt45 { margin-top:45px; }
+.mt47 { margin-top:47px; }
+.ml40 { margin-left:40px; }
+.ml5 { margin-left:5%; }
+.ml8 { margin-left:8px; }
+.pl33 { padding-left:33px; }
+.pl34 { padding-left:34px; }
+.pl35 { padding-left:35px; }
+.pl38 { padding-left:38px; }
+.pb10 { padding-bottom:10px;}
+.pb18 { padding-bottom:18px; }
+.pb25 { padding-bottom:25px; }
+.pt45 { padding-top:45px; }
+.ptb14 { padding:14px 0; }
+
+.f25 { font-size:25px; }
+.f13 { font-size:13px; }
+.f14 { font-size:14px; }
+.f16 { font-size:16px; }
+.f27 { font-size:27px; }
+
+.tl { text-align:left; }
+.tr { text-align:right; }
+.tc { text-align:center; }
+
+.bg-color-fff { background-color:#fff; }
+.bg-color-f1 { background-color:#f1f1f1; }
+.bg-color-gray { background-color:#7e7e7e; }
+.bg-color-red { background-color:#09F; }
+.bg-color-f60 { background-color:#f60; }
+.bg-color-7e { background-color:#7e7e7e; }
+.bg-color-f8533 { background:#ff8533; }
+.bg-color-e5f { background:#EE5F00; }
+.bg-color-61 { background:#616161; }
+.bg-color-98 { background:#989898; }
+.bg-fff-opacity {
+  background:rgba(255,255,255,.8) url(../img/success.png) no-repeat center 23px;
+  color:#6F6F6F;
+  background-size:auto 27px;
+}
+.bg-ccc-opacity {
+  background:rgba(0,0,0,.4) url(../img/error.png) no-repeat center 23px;
+  color:#fff;
+  background-size:auto 27px;
+}
+.bg-error-opacity {
+  background:rgba(255,255,255,.8) url(../img/error_tip.png) no-repeat center 23px;
+  color:#6F6F6F;
+  background-size:auto 27px;
+}
+
+
+.color-fff { color:#fff; }
+.color-tzkk { color:#37ADC5; }
+.color-cz { color:#FA4B53; }
+.color-tx { color:#FF6500; }
+
+.position-center {
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+.input .search-box .login {
+  background:url(../img/user.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .tel {
+  background:url(../img/tel.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .psw {
+  background:url(../img/psw.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .code {
+  background:url(../img/code.png) no-repeat center center;
+  background-size:auto 22px;
+}
+
+.input .search-box .login-active {
+  background:url(../img/user_active.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .tel-active {
+  background:url(../img/tel_active.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .psw-active {
+  background:url(../img/psw_active.png) no-repeat center center;
+  background-size:auto 22px;
+}
+.input .search-box .code-active {
+  background:url(../img/code_active.png) no-repeat center center;
+  background-size:auto 22px;
+}
+
+.inp-text {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:right;
+  font-size:13px;
+  display:block;
+}
+
+.btn {
+  height:44px;
+  line-height:44px;
+  text-align:center;
+  border-radius:50px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:18px;
+  color:#fff;
+}
+.link-btn {
+  display:inline-block;
+  text-align:center;
+  font-size:14px;
+  border:1px solid #09F;
+  border-radius:50px;
+  margin-left:50%;
+  -webkit-transform:translate(-50%,0);
+  -moz-transform:translate(-50%,0);
+  -ms-transform:translate(-50%,0);
+  -o-transform:translate(-50%,0);
+  transform:translate(-50%,0);
+  padding:7px 38px;
+}
+.over-btn {
+  border-radius:10px;
+}
+
+.fixed-height-box {
+  height:69px;
+}
+.bind-card-wrap {
+  width:100%;
+  height:auto;
+  background-color:#fff;
+  border-top:1px solid #e6e6e6;
+  border-bottom:1px solid #e6e6e6;
+}
+.bind-card-wrap .bind-card-title {
+  font-size:15px;
+  color:#6e6e6e;
+  border-bottom:1.5px solid #e7e7e7;
+}
+.bind-card-wrap .bind-card-title .bind-card-ico {
+  display:block;
+  width:7px;
+  height:15px;
+  background:url(../img/link-btn.png) no-repeat center center;
+  background-size:auto 15px;
+  margin-top:18px;
+  margin-right:14px;
+}
+
+.bind-card-wrap .card-inp-box {
+  border-bottom:1px solid #e6e6e6;
+}
+.bind-card-wrap .card-inp-box .search-inp {
+  width:35%;
+  height:100%;
+  line-height:50px;
+  border:none;
+  background:#fff;
+  font-size:15px;
+}
+.bind-card-wrap .card-inp-box .code-btn {
+  display:block;
+  width:35%;
+  height:25px;
+  line-height:25px;
+  margin-top:13px;
+  border:1px solid #FA4B53;
+  color:#FA4B53;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+}
+.bind-card-wrap .card-inp-box:last-child {
+  border-bottom:none;
+}
+.bind-card-wrap .card-inp-box .inp-intro {
+  width:30%;
+  text-align:left;
+  font-size:1.5rem;
+  color:#6D6D6D;
+}
+.bind-card-wrap .card-inp-box .inp-intro-text {
+  width:65%;
+}
+.bind-card-wrap .card-inp-box .inp-intro-text span {
+  display:block;
+  text-indent:20px;
+}
+.bind-card-wrap .card-inp-box .inp-intro-text span:nth-of-type(1){
+  width:80%;
+  font-size:15px;
+  color:#FF6500;
+}
+.bind-card-wrap .card-inp-box .inp-intro-text span:nth-of-type(1) em{
+  font-size:12px;
+  color:#6d6d6d;
+}
+.bind-card-wrap .card-inp-box .inp-intro-text span:nth-of-type(2){
+  width:20%;
+  text-align:center;
+  font-size:15px;
+  color:#6d6d6d;
+}
+.bind-card-wrap .card-inp-box .bind-card-inp {
+  line-height:50px;
+  border:none;
+  font-size:1.5rem;
+}
+.bind-card-wrap .card-inp-box .trade-inp-com {
+  text-indent:20px;
+}
+
+.select-card-wrap {
+  width:100%;
+  background:#fff;
+}
+.card-list {
+  border-bottom:1px solid #e7e7e7;
+}
+.card-list:first-child {
+  border-top:1px solid #e7e7e7;
+}
+.card-list .card-list-bg {
+  background:url(../img/card/selected.png) no-repeat right center;
+  background-size:auto 15px;
+}
+.card-list .card-icon {
+  display:inline-block;
+}
+.login form input[type="button"]{ width: 94%; margin: 5% 3%; display: block; padding: 4% 0;background-color: #FC605A;color: #fff; text-align: center; font-size: 1.7em; border-radius: 0.3em; border: none;}
+.btn-sty {
+    width: 94%;
+    margin: 5% 3%;
+    display: block;
+    padding: 4% 0;
+    background-color: #FC605A;
+    color: #fff;
+    text-align: center;
+    font-size: 1.7em;
+    border-radius: 0.3em;
+    border: none;
+}
+.judge { width:10%; height:100%;}
+.errorinput { border:1px solid #FF6906 !important; height:75% !important; margin-top:5px; border-radius:10px;}
+.mab10 { margin-bottom:10%;}
+.mat10 { margin-top:10%; }
+.redtext { color:#F00; font-size:18px;}
+
+.text22 { width:90%; margin:0 auto;}
+.text22 p { font-size:1.35em;  font-weight:bold; text-align:center; line-height:20px; padding-bottom:40px; padding-top:10px;}
+.text22 p.price { font-size:2.5em; color: #F00; border-bottom:1px solid #DADADA;}
+.text22 .grey { font-size:1.35em; color:#999;}
+.success, .fail { padding-top:5%;}
+.listl { float:left;}
+.listr { float:right;}
+
+
+body {
+	background-color: #f2f2f2;
+}
+@font-face {
+	font-family: 'adminthemesregular';
+	src: url('font/adminthemes-webfont.eot');
+	src: url('font/adminthemes-webfont.eot?#iefix') format('embedded-opentype'),  url('font/adminthemes-webfont.woff2') format('woff2'),  url('font/adminthemes-webfont.woff') format('woff'),  url('font/adminthemes-webfont.ttf') format('truetype'),  url('font/adminthemes-webfont.svg#adminthemesregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.link_icon {
+	font-family: 'adminthemesregular';
+	color:#F70000;
+	line-height: 20px;
+}
+/*白色顶部*/
+.top-header {
+	z-index: 1;
+	width: 100%;
+	background-color: #fff;
+	display: table;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+.top-header h3 {
+	font-size: 1.9em;
+	color: #333;
+	margin: 0 30%;
+	display: table-cell;
+	font-weight: normal;
+	text-align: center;
+	padding: 0.7em 0;
+}
+.top-header .text {
+	display: table-cell;
+	text-align: center;
+	width: 20%;
+	font-size: 1.5em;
+	color: #fc605a;
+}
+.top-header .texta {
+	color: #999;
+}
+.top-header a {
+	display: table-cell;
+}
+.top-header .icona {
+	width: 8.5%;
+	padding-left: 5%;
+	vertical-align: middle;
+}/*只能添加图标*/
+.top-header .iconb {
+	width: 11%;
+	padding-right: 5%;
+	vertical-align: middle;
+}/*只能添加图标*/
+.top-header .text-top {
+	width: 11%;
+	color: #999;
+	font-size: 1.169em;
+	vertical-align: middle;
+}/*能添加文字*/
+.top-header img {
+	width: 100%;
+}
+/*固定顶部*/
+
+/*登录注册*/
+.login {
+	width: 100%;
+	margin-top: 5%;
+}
+.login form {
+	width: 100%;
+}
+.login form ul {
+	width: 100%;
+	overflow: hidden;
+}
+.login form ul li {
+	padding: 4% 5%;
+	background-color: #fff;
+	margin-bottom: 2%;
+	overflow: hidden;
+}
+.login form ul li img {
+	width: 7%;
+	vertical-align: middle;
+}
+.login form ul li label {
+	font-size: 1.4875em;
+	vertical-align: middle;
+	color: #333;
+	margin: 0 3%;
+}
+.login form ul li input {
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.4875em;
+	color: #666;
+	border: none;
+}
+.login form ul li .judge {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.4875em;
+	color: #666;
+	border: none;
+	float: right;
+}
+.login form input[type="submit"], .gobuy-btn {
+	width: 94%;
+	margin: 5% 3%;
+	display: block;
+	padding: 4% 0;
+	background-color: #FC605A;
+	color: #fff;
+	text-align: center;
+	font-size: 1.7em;
+	border-radius: 0.3em;
+	border: none;
+}
+#next_btn{
+	width: 94%;
+	margin: 5% 3%;
+	display: block;
+	padding: 4% 0;
+	background-color: #FC605A;
+	color: #fff;
+	text-align: center;
+	font-size: 1.7em;
+	border-radius: 0.3em;
+	border: none;
+}
+.buybanner img {
+	width: 100%;
+}
+.top-header h3 img{ width:40px; height:40px; display:inline-block; vertical-align:middle;}
+
+
+/*账户余额--三种支付方式*/
+.self-data{ width: 100%;  background-color: #fff}
+.mgtop3 {margin-top: 3%;}
+.self-data li{ width: 100%; overflow: hidden; padding: 5%; border-bottom: solid 1px #ccc;}
+.self-data li a{ display: block; width: 100%;}
+.self-data li a *{ float: right;}
+.self-data li span{  width: 3%; display: block; margin-left: 5%;}
+.self-data li span img{  width: 100%; margin:60% 0;}
+.self-data li p{float: left; font-size: 1.45em; padding: 1.5% 0; color: #333; }
+.self-data li figure{ width: 10%; height: 0; padding-bottom: 10%; overflow: hidden;border-radius: 50%;  }
+.self-data li figure img{ width: 100%; }
+.self-data li small{ font-size: 1.25em; color: #666; padding: 1.8% 0;}
+.self-data li select{ font-size: 1.25em; color: #666; border: none; background-color: #fff; padding: 1% 0;}
+
+.self-data a{ width: 100%; overflow: hidden; }
+.self-data  a li{ display: block; width: 100%;}
+.self-data  a li *{ float: right;}
+.self-data li span{  width: 3%; display: block; margin-left: 5%;}
+.self-data li span img{  width: 100%; margin:60% 0;}
+.self-data li p{float: left; font-size: 1.45em; padding: 1.5% 0; color: #333; }
+.self-data li figure{ width: 10%; height: 0; padding-bottom: 10%; overflow: hidden;border-radius: 50%;  }
+.self-data li figure img{ width: 100%; }
+.self-data li small{ font-size: 1.25em; color: #666; padding: 1.8% 0;}
+.self-data li select{ font-size: 1.25em; color: #666; border: none; background-color: #fff; padding: 1% 0;}
+.whatpaybox h3 { background-color:rgba(251, 217, 215, 0.9); width:80%; box-shadow:4px; margin:0 auto; text-align:center; line-height:30px; }
+.whatpaybox p { width:90%; padding:20px; font-size:14px; margin:0 auto;}
+
+/*卡行者收银台*/
+.ordermonbox { width:100%; padding:4% 5% 3% 10px; background-color:#fff; font-size:1.5rem; margin-top:3%; border-bottom:1px solid #dad7d7;}
+.ordermonboxoth {
+    width: 100%;
+    padding: 4% 5% 3% 5%;
+    background-color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    border-bottom: 1px solid #dad7d7;
+}
+.ordermonboxothmb0 {
+    width: 100%;
+    padding: 4% 5% 3% 7%;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+.ordermonbox span:last-child ,.ordermonboxoth span:last-child,.ordermonboxothmb0 span:last-child {float:right;}
+.ordermonbox span i,.ordermonboxoth span i,.ordermonboxothmb0 span i{ color:#F40000; font-size:1.6rem; font-style:normal;}
+.otherpaybox{ width:100%; border-bottom: solid 1px #ccc; height:40px;line-height:45px; background-color:#fff; font-size:1.5rem; margin-top:10px; padding-left:10px;}
+.paystyle{ width: 100%; background-color: #fff; border-bottom: solid 1px #ccc;}
+.paystyle .payicon { padding:3% 0 2% 3%; float:left; display:inline-block;}
+.paystyle .payicon  img{ width:40px;}
+.mgtop3 {margin-top: 3%; }
+.paystyle li{ width: 80%; float:right;display:inline-block;  overflow: hidden; padding: 3% 3% 2% 0; }
+.paystyle li a{ display: block; width: 100%; height:38px; line-height:38px;}
+.paystyle li a *{ float: right;}
+.paystyle li div{  display:inline-block; width: 3%; margin-top: 3%;}
+.paystyle li div img{  width: 100%;}
+.paystyle li p{float: left; font-size: 1.45em; color: #333;  }
+.paystyle li figure{ width: 10%; height: 0; padding-bottom: 10%; overflow: hidden;border-radius: 50%;  }
+.paystyle li figure img{ width: 100%; }
+.paystyle li small{ font-size: 1.25em; color: #666; padding: 1.8% 0;}
+.paystyle li select{ font-size: 1.25em; color: #666; border: none; background-color: #fff; padding: 1% 0;}
+
+.zhifuway { display:inline-block; font-size:1.5rem; color: #09f !important;}
+.borColor { border:1px solid #F00 !important; }
+.returnpre { padding-left:10px; text-decoration:underline; font-size:1.3rem; font-weight:700; color:#FF8040;}

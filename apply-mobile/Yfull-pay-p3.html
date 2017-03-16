@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>全额支付</title>
+<link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/loading.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="layer_mobile/layer.js"></script>	
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+<body>
+	<header class="top-header">
+		<a class="icona" href="javascript:history.go(-1)">
+			<img src="images/left.png"/>
+		</a>
+		<h3>全额支付</h3>
+		<a class="text" href="#"></a>
+	</header>
+	<div class="ordermonboxothmb0"><span>订单金额</span><span><i  id="orderMoney">100.01</i>元</span></div>
+	<div class="ordermonboxothmb0"><span>账户余额</span><span><i  id="accountMoney">200</i>元</span></div>
+	<div class="ordermonboxothmb0"><span>支付方式</span><span><i  class="zhifuway">账户余额支付[全额支付]</i></span></div>
+	<div class="login">
+		<form>
+			<ul>
+				<li>
+					<label>支付金额为：</label>
+					<input id="inputMoney" type="number" readonly readonly value=""/>
+					<div class="fr judge">
+						<a  id="t_judge" class="link_icon">元</a>
+					</div>
+				</li>
+			</ul>
+			<input id="next_btn" type="submit" value="立即支付"/>
+		</form>
+	</div>	
+<script>
+	$(document).ready(function(e) {
+		if(parseFloat($('#accountMoney').text()) > parseFloat($('#orderMoney').text())){
+			$('#inputMoney').val($('#orderMoney').text());
+		}else{
+			$('#inputMoney').val($('#accountMoney').text());
+		}
+		
+		$('#inputMoney').click(function(){
+			layer.open({
+				content: '如需部分支付，可返回选择部分支付<a class="returnpre" href="account-yue-p2.html"><返回></a>'
+				,skin: 'footer'
+				 ,time: 4000
+				 ,shade: false
+			  });
+		});
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<title>支付</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!--表格-->
+<style>
+table{
+  border-collapse:collapse;
+  width:100%;
+  margin:10px auto;
+}
+
+.blue{
+  border:2px solid #C0C0C0;
+  font-size: 1.5rem;
+}
+
+.blue thead{
+border:1px solid #C0C0C0;
+}
+
+thead{
+  color:#666;
+}
+
+th,td{
+  text-align:center;
+  border-right:1px solid #C0C0C0;
+  border-bottom:1px solid #C0C0C0;
+}
+th{
+	font-weight:normal;
+}
+.fixed{
+  top:0;
+  position:fixed;
+  width:auto;
+  display:none;
+  border:none;
+}
+.scrollMore{
+  margin-top:600px;
+}
+.up{
+  cursor:pointer;
+}
+</style>
+<body class="bg-color-f1 pt45">
+<header class="top-header fixed-header">
+	<a class="icona" href="javascript:history.go(-1)">
+			<img src="images/left.png"/>
+		</a>
+	<h3>支付方式</h3>
+</header>
+<form id="next1"  method="post">
+	<section class="bind-card-wrap mt8 clear">
+		<div class="whatpaybox">
+			<table class="blue">
+			  <thead>		    
+			  <tr>
+			      <th>支付方式</th>
+			      <th>付款形式</th>
+				  <th>付款金额</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>账户余额</td>
+			      <td>全额</td>
+				  <td>100</td>
+			    </tr>
+			    <tr>
+			      <td>其他方式</td>
+			      <td>部分<span class="cardstyle">[预付卡]</span></td>
+				  <td>20</td>
+			    </tr>
+				 <tr>
+			      <td colspan='2'>共计</td>
+				  <td >120</td>
+			    </tr>
+				 <tr>
+			      <td colspan='2'>还应支付</td>
+				  <td >80</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</section>
+	<div class="login">
+		<a href="tiaojiekou.html"><input class="btn-sty" type="button" value="确认支付"/></a>
+	</div>
+</form>
+<div class="fixed-height-box"></div>
+<footer class="clear">
+</footer>
+</body>
+</html>
