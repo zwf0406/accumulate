@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Tab</title>
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<div class="tabs tabs-style-bar">
+					<nav>
+						<ul>
+                            <li><a href="#section-bar-1" class="icon icon-home"><span>订单汇总</span></a></li>
+							<li><a href="#section-bar-2" class="icon icon-box"><span>订单明细</span></a></li>
+							<li><a href="#section-bar-3" class="icon icon-display"><span>大类汇总</span></a></li>
+                            <li><a href="#section-bar-4" class="icon icon-tools"><span>大类明细</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-bar-1"><p>1</p></section>
+						<section id="section-bar-2"><p>2</p></section>
+						<section id="section-bar-3"><p>3</p></section>
+                        <section id="section-bar-4"><p>4</p></section>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	</body>
+</html>
