@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<link rel="stylesheet" type="text/css" href="./css/head.css" />
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="./css/suercenter.css" />
+		<script src="./js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+		<style>
+		.addr_msg {
+			padding-left: 122px;
+		}
+		</style>
+	</head>
+	<body>
+		<!--顶部公用-->
+		<div class="header">
+			<!--顶部导航-->
+			<div class="header_top">
+				<div class="w1200">
+					<div class="h_t_l">
+						<div class="login_l">
+							<span>欢迎来到卡行者!</span>
+							<a class="a_login" href="login.html">[登录]</a>
+						    <span class="line"></span>
+						    <a class="" href=" register.html">[注册]</a>
+							<span class="address option">
+								<font>
+									<font>送至</font>
+									<font id="t_con">上海</font>
+								</font>
+								<i  class="topi city_pre">V</i>
+								<div id="t_area"> 
+									<ul> 
+										<li><a href="#">上海</a></li> 
+										<li><a href="#">北京</a></li> 
+										<li><a href="#">重庆</a></li> 
+									</ul> 
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="h_t_r">
+						<ul>
+							<li>
+								<a href="userding.html">订单查询</a>
+								<span class="line"></span>
+							</li>
+							<li>
+								<a href="userindex.html">我的卡行者</a>
+								<span class="line"></span>
+							</li>
+							<li>
+								<i class="tel_icon"></i>
+								<a href="">021-22876315</a>
+								<span class="line"></span>
+							</li>
+							<li>
+								<a href="">下载卡行者app</a>
+								<span class="line"></span>
+							</li>
+							<li>
+								<a href="">客服中心</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--搜索-->
+			<div class="full_sc">
+				<div class="w1200 header_conter">
+					<div class="h_c_logo">
+						<a href="index.html">
+							<img src="./image/logo.jpg" />
+						</a>
+					</div>
+					<div class="h_c_bz">
+						<img src="./image/top_center.jpg" style="width: 467px;height:29px" />
+					</div>
+					<div class="h_c_search">
+						<div class="search_input">
+							<form action="" method="post">
+								<input type="text" style="color: rgb(102, 102, 102);" name="keyword" class="text_search" placeholder="limu 胶原蛋白" value="" />
+								<input type="submit" class="btn_search" value="搜索" />
+							</form>
+						</div>
+						<div class="search_key">
+							<ul>
+								<li>
+									<a href="">太阳镜</a>
+								</li>
+								<li>
+									<a href="">蕉下</a>
+								</li>
+								<li>
+									<a href="">果蔬脆片</a>
+								</li>
+								<li>
+									<a href="">德亚酸牛奶</a>
+								</li>
+								<li>
+									<a href="">蚕丝面膜</a>
+								</li>
+								<li>
+									<a href="">山地车</a>
+								</li>
+								<li>
+									<a href="">BB霜</a>
+								</li>
+								<li>
+									<a href="">乳胶枕</a>
+								</li>
+								<li>
+									<a href="">蝙蝠侠系列石英表</a>
+								</li>
+								<li>
+									<a href="">拍立得</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--菜单-->
+			<div class="full_nav">
+				<div class="w1200">
+					<ul class="nav">
+		    			<li class="li_all_type">
+		    				<a href="">全部分类</a>
+		    			</li>
+		    			<li class="home">
+		    				<a href="index.html" style="color: #C41F3A;">首页</a>
+		    			</li>
+		    			<li>
+		    				<a href="">苏宁</a>
+		    			</li>
+		    			<li>
+		    				<a href="">京东</a>
+		    			</li>
+		    			<li>
+		    				<a href="">天猫</a>
+		    			</li>
+                        <li>
+		    				<a href="">携程</a>
+		    			</li>
+                        <li>
+		    				<a href="">一号店</a>
+		    			</li>
+		    		</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部end-->
+		<div class="w1000 ClearFix margin_top20">
+			<!--左侧end-->
+			<div class="ur_left">
+				<div class="ur_slide">
+					<a href=""><h2 class="slide_h2"><b></b>我的卡行者</h2></a>
+					<ul class="slide_list">
+						<li class="no">
+							<a href="userding.html">我的订单</a>
+						</li>
+						<li>
+							<a href="usertui.html">申请退款</a>
+						</li>
+						<li>
+							<a href="usersou.html">我的收藏</a>
+						</li>
+						<li>
+							<a href="useryou.html">我的优惠卷</a>
+						</li>
+						<li>
+							<a href="userji.html">我的积分</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ur_slide">
+					<a href=""><h2 class="slide_h2"><b></b>我的卡行者</h2></a>
+					<ul class="slide_list">
+						<li class="on">
+							<a href="userge.html">个人资料</a>
+						</li>	<li>
+							<a href="userzhang.html">账号安全</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<!--左侧end-->
+			<div class="ur_right ClearFix">
+				<!--uer_top-->
+				<div class="ur_location">
+					<a href="">我的卡行者</a>
+					<span>&gt;</span>
+					<a class="a_cur">个人资料</a>
+				</div>
+				<!--uer_top-->
+				<div class="base_info">
+					<div class="info_top">
+						<div class="bi_l">
+							<div class="m_img">
+								<div class="hg_box">
+									<img src="./image/hg_img_0.png">
+								</div>
+								<img src="image/user_center_img4.jpg">
+							</div>
+							<!--<a class="" href="">修改头像</a>-->
+						</div>
+						<div class="bi_r">
+							<div class="m_username">用户名：<span>WEB9B9CE1E0D4</span></div>
+							<div class="m_grade"><span>注册会员</span></div>
+						</div>
+					</div>
+					<form action="" method="post">
+						<input name "" value="" type="hidden">
+						<input name="" value="ok" type="hidden">
+						<input name="" value="" type="hidden">
+						<div class="base_item">
+							<span class="label_name"><span>*</span>昵称：</span>
+							<input maxlength="20" id="member_truename" name="member_truename" class="itxt" value="web9b9ce1e0d4" type="text">
+							<div class="addr_msg">
+								<span id="error_member_truename">昵称不能为空！</span>
+							</div>
+						</div>
+						<div class="base_item">
+							<span class="label_name"><span>*</span>性别：</span>
+							<label class="s_radio"><input name="member_sex" value="0" checked="checked" type="radio">女 </label>
+							<label class="s_radio"><input name="member_sex" value="1" type="radio">男</label>
+							<div class="addr_msg"><span id="error_member_sex">请选择您的性别</span></div>
+						</div>
+						<div class="base_item">
+
+							<span class="label_name"><span>*</span>生日：</span>
+							<select class="sel_year" rel="2000">年份</select>
+							<select class="sel_month" rel="1">月份</select>
+							<select class="sel_day" rel="1">日期</select>
+							<div class="addr_msg">
+								<span id="error_member_birthday">请选择您的生日！</span>
+							</div>
+						</div>
+						<div class=" base_btn">
+							<a class="base_btn_save" id="profilesubmit" href="javascript:;">保存</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--底部公用-->
+<div class="footer">
+	    	<div class="footer_help w1200">
+	    		<div class="footer1_l">
+	    			<dl class="helpDl">
+	    				<dt><h5>使用帮助</h5></dt>
+	    				<dd><a href="">文字栏目 </a></dd>
+	    				<dd><a href="">新手指南 </a></dd>
+	    			    <dd><a href="">常见问题 </a></dd>
+	    				<dd><a href="">用户协议 </a></dd>
+	    			</dl>
+	    			<dl class="helpDl">
+	    				<dt><h5>会员服务</h5></dt>
+	    				<dd><a href="">积分政策  </a></dd>
+	    				<dd><a href="">会员权益  </a></dd>
+	    			    <dd><a href="">会员等级  </a></dd>
+	    			</dl>
+	    			<dl class="helpDl">
+	    				<dt><h5>支付方式</h5></dt>
+	    				<dd><a href="">积分支付  </a></dd>
+	    			    <dd><a href="">在线支付  </a></dd>
+	    				<dd><a href="">优惠券支付  </a></dd>
+                        <dd><a href="">优惠券支付  </a></dd>
+	    			</dl>
+	    			<dl class="helpDl">
+	    				<dt><h5>配送方式</h5></dt>
+	    				<dd><a href="">包邮政策   </a></dd>
+	    				<dd><a href="">费用说明   </a></dd>
+	    			    <dd><a href="">配送说明   </a></dd>
+	    			</dl>
+	    			<dl class="helpDl">
+	    				<dt><h5>售后服务</h5></dt>
+	    				<dd><a href="">售后咨询   </a></dd>
+	    			    <dd><a href="">退货办理   </a></dd>
+	    			 	<dd><a href="">退货政策   </a></dd>
+                       <dd><a href="">文字栏目   </a></dd>
+	    			</dl>
+	    		</div>
+	    		<div class="footer1_r">
+	    			<ul>
+
+	    				<li>
+	    					<h2>微信公众号</h2>
+	    					<img src="./image/footer_ewm_02.png"/>
+                            <p>微信公众号官方微信</p>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	        <div class="footer_nav">
+	        	<div class="w720">
+11111
+	        	</div>
+	        </div>
+	        <div class="footer_bottom">
+	        	<div class="w1200">
+	        		<p>
+	        			<span class="font_arial">Copyright© shanghail.com.cn. All Rights Reserved </span>
+                        <span class="font_arial">E-Mail: service@shanghai.com.cn</span><br>
+                                           沪ICP备1123456号 
+	        		</p>
+
+	        	</div>
+	        </div>
+	    </div>
+	    <!--底部end-->
+<script src="./js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="./assets/layer/layer.js"></script>
+<script type="text/javascript" src="./js/birthday.js"></script>	
+<script>  
+$(function () {
+	$.ms_DatePicker({
+			YearSelector: ".sel_year",
+			MonthSelector: ".sel_month",
+			DaySelector: ".sel_day"
+	});
+	$.ms_DatePicker();
+}); 
+</script> 
+	</body>
+</html>

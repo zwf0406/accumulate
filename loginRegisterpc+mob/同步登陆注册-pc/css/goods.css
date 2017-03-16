@@ -1,0 +1,383 @@
+/**
+ * 全球购页css
+ */
+.top_img {
+    width: 100%;
+  
+}
+.top_o_imgs{
+    width: 1200px;
+    height: 380px;
+    margin: auto;
+    position: relative;
+    left: -400px;
+}
+.con_list_pic{
+	width: 100%;
+	margin-top: 30px;
+}
+.con_list_pic li {
+    transition: all 0.6s ease 0s;
+    float: left;
+    border: 1px solid #eaeaea;
+    margin-right: 12px;  /*15px*/
+    width: 286px;
+    padding: 0 0 10px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    height: 394px;
+    overflow: hidden;
+}
+.con_list_pic li:hover{
+	border: 1px solid #CB2D01;
+}
+.con_list_pic .no-margin{
+	margin-right: 0;
+}
+.a_list_con{
+	display: block;
+	cursor: pointer;
+}
+.p_img {
+    overflow: hidden;
+    width: 100%;
+    height: 286px;
+}
+.p_title {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 16px;
+    overflow: hidden;
+    color: #434343;
+    padding: 0 15px;
+}
+.p_p {
+    margin-top: 12px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.p_img img {
+    overflow: hidden;
+    width: 100%;
+}
+.p_img .imgmartop{ margin-top:60px;} 
+.p_p_left {
+    float: left;
+}
+.p_p_right {
+    float: right;
+}
+.p_p .price2 {
+    padding-left: 0px;
+    display: block;
+    line-height: 1em;
+}
+.p_p .price1 {
+    color: #B61D1D;
+    font-family: "华文细黑";
+    font-size: 16px;
+    display: block;
+    line-height: 1.8em;
+}
+.p_p .price2 del {
+    color: #969696;
+    font-size: 14px;
+}
+.p_p .price1 span {
+    font-family: Arial;
+    color: #B61D1D;
+    font-size: 30px;
+}
+.p_p .price1 .money_icon {
+    font-size: 30px;
+    font-family: "华文细黑";
+}
+.mryh_add_car {
+    display: block;
+    margin-top: 15px;
+    width: 52px;
+    height: 28px;
+    background-color: #B61D1D;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+
+
+
+
+/*搜索条件*/
+
+.feed-main-con {
+    background-color: #fff;
+}
+.feed-orderby {
+    height: 43px;
+    line-height: 45px;
+    border-bottom: 1px solid #ddd;
+    color: #ddd;
+}
+ .feed-orderby .feed-orderby-all.active, #feed-main .feed-orderby .feed-orderby-newest.active {
+    color: #f04848;
+}
+ .feed-orderby .feed-orderby-all, #feed-main .feed-orderby .feed-orderby-newest {
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    color: #5188a6;
+    cursor: pointer;
+}
+
+ .feed-control {
+    float: right;
+    font-size: 12px;
+    margin-right: 20px;
+    color: #999;
+}
+ .feed-control .feed-clear {
+    margin-right: 20px;
+    color: #5188a6;
+}
+
+.feed-control span {
+    cursor: pointer;
+}
+ .feed-orderby .feed-control .feed-fold .arrow-up,  .feed-orderby .feed-control .feed-fold .arrow-up::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 0 4px 4px;
+    border-style: solid;
+}
+ .feed-orderby .feed-control .feed-fold .arrow-up {
+    position: relative;
+    border-color: #999 transparent;
+    margin: 0;
+    margin-left: 8px;
+    vertical-align: 2px;
+}
+address, cite, em, i {
+    font-style: normal;
+}
+.filter-row {
+    padding: 7px 0;
+    border-top: 1px solid #f5f5f5;
+    font-size: 12px;
+}
+.filter-row .cate-operate {
+    float: right;
+    margin-top: 10px;
+    margin-right: 14px;
+}
+.z-btn-more {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    line-height: 19px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+.filter-row .filter-row-con {
+    padding-left: 14px;
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+filter-row .filter-row-con > div {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.filter-row .filter-item-title {
+    width: 48px;
+    height: 20px;
+    padding-right: 20px;
+    margin-right: 7px;
+    border-right: 1px solid #f5f5f5;
+    line-height: 20px;
+    text-align: right;
+    color: #666;
+}
+.filter-row .filter-row-con > div {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.filter-row .filter-items {
+    margin-right: 84px;
+    white-space: normal;
+    overflow: hidden;
+}
+.filter-row .filter-items > div > a {
+    color: #333;
+}
+.filter-row .filter-items .drop-menus a, .filter-row .filter-items > div > a {
+    border-radius: 2px;
+}
+.filter-row .filter-items .drop-menus a:hover, .filter-row .filter-items>div>a:hover {
+    color: #f04848;
+    background-color: rgba(240,72,72,.1);
+    text-decoration: none;
+}
+#filter-block .filter-items .filter-items-ok {
+    margin-right: 5px;
+    padding: 0;
+    width: 40px;
+    height: 20px;
+    color: #f04848;
+    cursor: pointer;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    background: #fef6f6;
+    border: 1px solid #f04848;
+    border-radius: 2px;
+}
+.filter-row .filter-items>div>span {
+    color: #999;
+    cursor: default;
+	border: 1px solid #c20c0c;
+}
+.filter-row .filter-items .drop-menus a, .filter-row .filter-items>div>a, .filter-row .filter-items>div>span {
+    position: relative;
+    display: inline-block;
+    margin: 10px 8px;
+    padding: 0 5px 0 8px;
+    white-space: nowrap;
+    font-size: 12px;
+	 color: #333;
+}
+.filter-row .filter-items>div>span:hover { color:#c20c0c;}
+#filter-block .filter-input-wrap input {
+    padding-left: 5px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid #ddd;
+}
+blockquote, button, dl, form, input, ol, p, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-row .cate-operate a .arrow-down, .filter-row .cate-operate a .arrow-down:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 4px 4px 0;
+    border-style: solid;
+}
+.filter-row .cate-operate a .arrow-down {
+    position: relative;
+    border-color: #999 transparent;
+    margin: 0;
+    margin-left: 8px;
+    vertical-align: 2px;
+}
+.z-btn-more:hover {
+    border-color: #f04848!important;
+    background-color: #f04848;
+    color: #fff;
+}
+
+.feed-main-con { width:1200px; margin: 0 auto;}
+.feed-orderby-newest { color:#666;}
+.filter-row .cate-operate a .arrow-up, .filter-row .cate-operate a .arrow-up:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 0 4px 4px;
+    border-style: solid;
+}
+.filter-row .cate-operate a .arrow-up {
+    position: relative;
+    border-color: #999 transparent;
+    margin: 0;
+    margin-left: 8px;
+    vertical-align: 2px;
+}
+.feed-orderby .feed-control .feed-clear {
+    margin-right: 20px;
+    color: #5188a6;
+}
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 4px 4px 0;
+    border-style: solid;
+	position: relative;
+	border-color: #999 transparent;
+	margin: 0;
+	margin-left: 8px;
+	vertical-align: 2px;
+}
+.arrow-up {
+   position: relative;
+    border-color: #999 transparent;
+    margin: 0;
+    margin-left: 8px;
+    vertical-align: 2px;
+}
+
+
+/*js涉及到的样式*/
+.height0 { height:auto !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

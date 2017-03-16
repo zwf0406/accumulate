@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>登陆</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="wrap">
+		<div class="title">
+			<div class="logoweap">
+				<img class="titclass" src="img/LOGO_1.png"/>
+			</div>
+			<span class="tiptext u-code-tip"></span>
+			<span class="tiptext p-code-tip"></span>
+			<span class="tiptext y-code-tip"></span>
+		</div>
+		<form>
+		<div class="input">
+			<div class="search-box clear">
+				<div class="input-icon login login-active fl"></div>
+				<input id="u" type="text" class="search-inp fl" placeholder="请输入卡通中国账号" />
+				<div class="fr judge">
+					<a  id="u_judge" class="link_icon"></a>
+				</div>
+			</div>
+			<div class="search-box clear">
+				<div class="input-icon psw psw-active fl"></div>
+				<input id="p" type="password" class="search-inp fl" placeholder="请输入卡通中国密码" />
+				<div class="fr judge">
+					<a  id="p_judge" class="link_icon"></a>
+				</div>
+			</div>
+			<div class="search-box yzmbox clear" style="display:none">
+				<div class="input-icon code code-active fl"></div>
+				<input id="y" onBlur="yzmblur()" type="text" class="search-inp code-inp fl" placeholder="请输入验证码" />
+					<canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+				<div class="fr judge">
+					<a  id="y_judge" class="link_icon"></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="login_btn" class="btn log w88 mt47 bg-color-red">登 录</div>
+		<a href="register.html" class="link-btn mt47">注册</a>
+		</form>
+		<div class="fixed-height-box"></div>
+	</section>
+	<footer class="clear">
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="layer_mobile/layer.js"></script>
+	<script type="text/javascript" src="js/logoncheck.js"></script>
+</body>
+</html>
